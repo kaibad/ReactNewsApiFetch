@@ -8,7 +8,7 @@ const Search = () => {
             <h1>KB Tech News</h1>
             <form onSubmit={(e) => e.preventDefault()}>
                 <div>
-                    <input type="text" placeholder='Search' value={query} onChange={(e) => searchpost(e.target.value)} />
+                    <input type="text" placeholder='Search' value={query} />
                 </div>
             </form>
             <div>search</div>
@@ -17,4 +17,5 @@ const Search = () => {
     );
 }
 
-export default Search
+export default Search;
+// onChange = {(e) => searchpost(e.target.value)}
